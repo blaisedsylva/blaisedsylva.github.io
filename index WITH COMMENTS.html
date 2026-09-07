@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+  This tells the browser that this file uses modern HTML5.
+  HTML is the language that gives a webpage its STRUCTURE.
+-->
+<html lang="en">
+
+<head>
+  <!--
+    The <head> contains information ABOUT the webpage.
+    Most things in the head do not appear directly on the page.
+  -->
+
+  <!-- Allows the browser to display normal text and symbols correctly. -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the website resize correctly on phones, tablets, and computers. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This is the text that appears on the browser tab. -->
+  <title>Blaise D'Sylva | University of Utah Student</title>
+
+  <!--
+    CSS controls what the website LOOKS like.
+    Everything between <style> and </style> below is CSS.
+  -->
+  <style>
+
+    /*
+      The * means "apply this to everything on the page."
+
+      box-sizing makes sizing elements easier to understand.
+      margin: 0 removes default outside spacing.
+      padding: 0 removes default inside spacing.
+    */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /*
+      BODY = the entire visible webpage.
+
+      font-family chooses the fonts.
+      background sets the page background color.
+      color sets the normal text color.
+    */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    /*
+      HEADER = the big red section at the top of the website.
+
+      background controls its color.
+      color makes the text white.
+      padding creates space around the text.
+      text-align centers everything.
+    */
+    header {
+      background: #cc0000;
+      color: white;
+      padding: 64px 24px;
+      text-align: center;
+    }
+
+    /*
+      This specifically styles the <h1> inside the header.
+      The h1 is your name: "Blaise D'Sylva."
+    */
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    /*
+      This styles the paragraph directly below your name.
+    */
+    header p {
+      font-size: 1.25rem;
+    }
+
+    /*
+      MAIN contains the main content of the webpage.
+
+      max-width prevents the content from becoming too wide
+      on a large computer screen.
+
+      margin: 48px auto gives it space at the top/bottom
+      and automatically centers it left-to-right.
+    */
+    main {
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    /*
+      .about styles anything with class="about".
+
+      This creates the white About Me card.
+    */
+    .about {
+      background: white;
+      padding: 32px;
+      border-radius: 10px;
+
+      /* Adds the subtle shadow around the card. */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    /*
+      Styles the "About Me" heading.
+
+      #cc0000 is the red color used in the design.
+    */
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      color: #cc0000;
+    }
+
+    /*
+      Styles the About Me paragraph.
+
+      line-height adds space between lines so the paragraph
+      is easier to read.
+    */
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!--
+    Everything inside <body> is the actual webpage the visitor sees.
+  -->
+
+  <!-- =========================
+       HEADER / TOP OF THE PAGE
+       ========================= -->
+  <header>
+
+    <!-- h1 is the most important heading on the page. -->
+    <h1>Blaise D'Sylva</h1>
+
+    <!-- p means paragraph. -->
+    <p>Student at The University Of Utah</p>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+  <main>
+
+    <!--
+      A <section> groups related information together.
+
+      class="about" connects this section to the .about CSS
+      written above, which gives it the white card design.
+    -->
+    <section class="about">
+
+      <!-- h2 is a second-level heading. -->
+      <h2>About Me</h2>
+
+      <!--
+        This paragraph contains your About Me information.
+        You can edit the words between <p> and </p>
+        without changing any of the design code.
+      -->
+      <p>
+        I am Blaise, I am a student at the University of Utah. I am pursuing a degree
+        in marketing and a minor in sports business. My career interests include
+        working in sports and potentially working in a front office of a Big 5 sports
+        team. I haven't decided fully on where or what exact role I am pursuing, but
+        something in sports is the sole focus. This class I hope to grow my knowledge
+        of IS and coding and see where it takes me.
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+
+<!--
+  That's the entire webpage.
+
+  QUICK CHEAT SHEET:
+
+  HTML = what is on the page
+  CSS  = what the page looks like
+
+  <header>  = top section
+  <h1>      = main heading
+  <h2>      = smaller heading
+  <p>       = paragraph
+  <main>    = main page content
+  <section> = group of related content
+
+  HTML comments look like this:
+      [less-than sign]!-- comment --[greater-than sign]
+
+  CSS comments look like this:
+      /* comment */
+
+  Comments are ignored by the browser, so they are there
+  only to help humans understand the code.
+-->
+
+</html>
